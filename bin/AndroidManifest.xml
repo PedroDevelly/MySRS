@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.uff.ic.arqcomp.mysrs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.uff.ic.arqcomp.mysrs.NovoAbrirActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="br.uff.ic.arqcomp.mysrs.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+      
+        
+        <activity
+            android:name="br.uff.ic.arqcomp.mysrs.AdicionarRemoverActivity"
+            android:label="@string/title_activity_adicionar_remover" >
+        </activity>
+        
+        <activity
+            android:name="br.uff.ic.arqcomp.mysrs.TelaNovo"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:exported="false"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/choose_file"
+            android:theme="@style/ChooserTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

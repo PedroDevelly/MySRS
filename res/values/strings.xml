@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MySRS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="titulo">MySRS</string>
+    <string name="novo">Novo</string>
+    <string name="abrir">Abrir...</string>
+    <string name="novo_abrir">Novo/Abrir...</string>
+    <string name="fechar">Fechar</string>
+    <string name="sair">Sair</string>
+    <string name="title_activity_novo_abrir">NovoAbrirActivity</string>
+    <string name="adicionar_remover">Adicionar/Remover</string>
+    <string name="title_activity_adicionar_remover">AdicionarRemoverActivity</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>   
+    
+    <string name="chooser_title">Lorem ipsum</string>
+
+</resources>

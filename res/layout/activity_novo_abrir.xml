@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovoAbrirActivity" >
+
+    <TextView
+        android:id="@+id/limiteDePerguntasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Limite de Perguntas:" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/limiteDePerguntasTextView"
+        android:layout_below="@+id/limiteDePerguntasTextView"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/perguntaScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/perguntaTextView"
+                android:layout_width="319dp"
+                android:layout_height="170dp"
+                android:text="Pergunta" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/respostaScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/perguntaScrollView"
+        android:layout_marginTop="28dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/respostaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:text="Resposta" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/facilButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="16dp"
+        android:text="Fácil" />
+
+    <Button
+        android:id="@+id/medioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/facilButton"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/facilButton"
+        android:text="Médio" />
+
+    <Button
+        android:id="@+id/dificilButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/medioButton"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/medioButton"
+        android:text="Difícil" />
+
+    <Button
+        android:id="@+id/mostrarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dificilButton"
+        android:layout_alignRight="@+id/perguntaScrollView"
+        android:layout_marginRight="15dp"
+        android:text="Mostrar" />
+
+</RelativeLayout>

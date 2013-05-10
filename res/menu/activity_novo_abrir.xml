@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/novo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/novo"/>
+    
+    <item
+        android:id="@+id/abrir"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/abrir"/>
+    
+    <item
+        android:id="@+id/adicionar_remover"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/adicionar_remover"/>
+    
+    <item
+        android:id="@+id/fechar"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/fechar"/>
+    
+    <item
+        android:id="@+id/sair"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sair"/>
+    
+
+</menu>
